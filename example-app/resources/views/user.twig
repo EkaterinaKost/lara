@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>List of users</title>
+</head>
+<body>
+    <h3>This is twig</h3>
+    <table border="2">
+        {% for user in users %}
+            <tr><td>{{user.first_name}}</td><td>{{user.email}}</td></tr>        
+        {% endfor %}
+    </table>
+</body>
+
+</html>
