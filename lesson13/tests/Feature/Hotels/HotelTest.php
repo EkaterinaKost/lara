@@ -39,6 +39,6 @@ class HotelTest extends TestCase
 
         $response = $this->post('/api/hotels/', $atributes);
         $response->assertStatus(201);
-        $this->assertDatabaseHas('hotel',$atributes);
+        $this->assertDatabaseHas('hotels',$atributes);
     }
 }

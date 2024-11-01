@@ -7,3 +7,7 @@ Route::get('/', function () {
 });
 
 Route::apiResource('hotels',\App\Http\Controllers\HotelController::class);
+
+Route::get('menu-test', function(){
+    return view('menu-test');
+});
